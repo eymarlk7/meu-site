@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body{
+    background-color: #E9FAFE;
+    height: 100vh;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 20px 30px 20px;
+
+    transform: translate(-50%, -50%);
+}
+
+figure{
+    margin: 0px 0px 16px;
+}
+figure > img{
+    display: block;
+    height: 100px;
+    width: 159.69px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+.campo-user{
+    margin-bottom: 25px;
+}
+.campo-senha{
+    margin-bottom: 35px;
+}
+.campo-user > input[type="text"], .campo-senha > input[type="password"]{
+    display: block;
+    width: 438px;
+    height: 68px;
+
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.097);
+    box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.034);
+    padding: 0px 25px;
+    outline: none;
+    margin: auto;
+}
+
+.entrar{
+    height: 60px;
+    width: 438px;
+    margin: auto;
+    background-color: #fff;
+
+    margin-bottom: 20px;
+}
+.entrar > a{
+    display: block;
+    height: 100%;
+    line-height: 4.5;
+
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(61, 111, 215);
+}

@@ -1,0 +1,92 @@
+
+
+@media screen and (min-width: 768px) {
+    
+    .main-header{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo{
+        width: 21.7%;
+    }
+    
+    .navegation-menu{
+        width: 100%;
+        margin-top: 0;
+    }
+    div.itms-menu ul li a, .menu-burguer{
+        margin-top: 0px;
+    }
+    
+
+    .info-user > a > span{
+        display: block;
+        margin-left: 10px;
+    }
+    .user-panel > a > img{
+        line-height: 0;
+    }
+    .user-panel > a{
+        margin-top: 0px;
+        padding: 10px;
+    }
+
+    /*Tabela password
+    #campo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+ 
+    /**/
+
+    aside.menu-sidebar, ul.atividades > ul.items-menuLeft{
+        display: block; 
+    }
+
+    /*Tabela pagamentos*/
+    #ano-letivo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .ano-letivo > select#anoletivo{
+        width: 100px;
+        margin: 0px 5px;
+    }
+
+    #painel-extra-pg{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 15px;
+    }
+
+
+    /*Final das configurações*/
+
+    /*Tabela grade curricular*/
+    .grade-curricular > #painel-extra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 1.2em 10px 1.2em;
+    }
+
+    .table-container > table > tbody td{
+        text-align: left;
+    }
+
+    .painel-filtro{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 16px;
+        
+    }
+    /**/
+}

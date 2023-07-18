@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISA - SERVIÇOS ACADÉMICOS</title>
+    <link rel="stylesheet" href="/html/css/style.css">
+    <link rel="stylesheet" href="/html/assets/password/style_password/password.css">
+
+    <link rel="stylesheet" href="/html/css/media-queries.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="shortcut icon" href="/html/logo/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="#"><b>SI</b>SA</a>
+        </div>
+        <nav class="navegation-menu">
+
+            <aside>
+
+                <div class="itms-menu">
+                    <a href="#" class="menu-burguer" onclick=" controleMenu()">
+                        <div class="burguer"></div>
+                        <div class="burguer"></div>
+                        <div class="burguer"></div>
+                    </a>
+                    <ul>
+                        <li class="info-user">
+                            <a href="#">
+                                <img src="" alt="">
+                                <span>20211058</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><span><i class="fa-solid fa-power-off"
+                                        style="color: #e90729;"></i>SAIR</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><i class="fab fa-weixin fa-lg" style="color: #ffffff;"></i>Anúncio</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <aside class="menu-sidebar" style="height: auto;">
+            <div class="user-panel">
+                <a href="#">
+                    <img src="" alt="">
+
+                    <span>2021058</span>
+                </a>
+            </div>
+            <div class="menu-left">
+                <ul class="atividades">
+                    <li>
+                        <a href="#" class="dropdown" onclick="controleMenu2()">
+                            <i class="fa-sharp fa-solid fa-gear" style="color: #ffffff;"></i>
+                            <span>ACTIVIDADES </span>
+                            <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                        </a>
+                    </li>
+                    <ul class="items-menuLeft">
+                        <li>
+                            <a href="/html/index.html"><i> </i><span class="radio-icon">Alterar Password</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/html/assets/gradeCurricular/index.html"><i> </i> <span class="radio-icon">Grade
+                                    Curricular</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Inscrição em Recursos</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Calendario de Prova</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Disciplinas</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Emonumento</span>s</a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Historico</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Horario</span></a>
+                        </li>
+                        <li>
+                            <a href="/html/assets/notas/index.html"><i> </i> <span class="radio-icon">Listar Notas</span></a>
+                        </li>
+                        <li>
+                            <a href="/html/assets/pagamentos/"><i> </i> <span class="radio-icon">Listar Pagamentos</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Serviços Academico</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Pagina do Estudante</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Solicitar Documentos</span></a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="log-out">
+                <a href="#"><span><i class="fa-solid fa-power-off" style="color: #e90729;"></i>SAIR</span></a>
+            </div>
+        </aside>
+
+        <section class="content" style="height: 100vh;">
+            <header>
+                <h2>Alterar Minha Senha</h2>
+            </header>
+            <div class="password">
+                <form action="#" method="post">
+                    <div class="campo" id="campo">
+                        <label for="user-name">Username:</label>
+                        <input type="text" name="user" id="user-name" value="20211058">
+                    </div>
+                    <div class="campo" id="campo">
+                        <label for="altpassword">Nova Password: </label>
+                        <input type="password" name="alpassword" id="altpassword" placeholder="Nova Password">
+                        <div class="info-extra">
+
+                            <span>Deve ter letras <strong>Maiúsculas, minúsculas,numeros</strong>. No mínimo são
+                                <strong> 8 caracteres</strong></span>
+
+                            <div class="look-pass"><input type="checkbox" name="mostrar" id="mostrar"><label
+                                    for="mostrar">Mostrar Password</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo" id="campo">
+                        <label for="iconfirmar">Confirmar Password:</label>
+                        <input type="password" name="confirmar" id="iconfirmar" placeholder="Repetir Password">
+                    </div>
+                    <div class="button"> <input type="button" value="Alterar Password">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><strong>Copyright &copy; 2017 - WebSchool Powered By</strong> <a href="#">AdminLTE</a>.Direitos Reservados
+        </p>
+    </footer>
+
+
+    <script src="/html/script/script.js"></script>
+</body>
+
+</html>

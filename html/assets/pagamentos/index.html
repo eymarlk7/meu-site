@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISA - SERVIÇOS ACADÉMICOS</title>
+    <link rel="stylesheet" href="/html/css/style.css">
+
+    <link rel="stylesheet" href="/html/css/media-queries.css">
+
+    <link rel="stylesheet" href="/html/assets/pagamentos/pagamentos.css">
+
+    <link rel="stylesheet" href="/html/assets/gradeCurricular/gradecurricular.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <link rel="shortcut icon" href="/html/logo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="#"><b>SI</b>SA</a>
+        </div>
+        <nav class="navegation-menu">
+        
+                <aside>
+                    
+                    <div class="itms-menu">
+                        <a href="#" class="menu-burguer" onclick="controleMenu()">
+                            <div class="burguer"></div>
+                            <div class="burguer"></div>
+                            <div class="burguer"></div>
+                        </a>
+                        <ul>
+                            <li class="info-user">
+                                <a href="#">
+                                    <img src="" alt="">
+                                    <span>20211058</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><span><i class="fa-solid fa-power-off" style="color: #e90729;"></i>SAIR</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span><i class="fab fa-weixin fa-lg" style="color: #ffffff;"></i>Anúncio</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            
+            </nav>
+    </header>
+
+    <main class="container">
+        
+        <aside class="menu-sidebar" style="height: auto;">
+            <div class="user-panel">
+                <a href="#">
+                    <img src="" alt="">
+
+                    <span>2021058</span>
+                </a>
+            </div>
+            <div class="menu-left">
+                <ul class="atividades">
+                    <li>
+                        <a href="#" class="dropdown" onclick="controleMenu2()">
+                            <i class="fa-sharp fa-solid fa-gear" style="color: #ffffff;"></i>
+                            <span>ACTIVIDADES </span>
+                            <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                            </a>
+                    </li>
+                    <ul class="items-menuLeft">
+                        <li>
+                            <a href="/html/index.html"><i> </i><span class="radio-icon">Alterar Password</span>
+                            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/html/assets/gradeCurricular/index.html"><i> </i> <span class="radio-icon">Grade Curricular</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Inscrição em Recursos</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Calendario de Prova</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Disciplinas</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Emonumento</span>s</a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Historico</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Horario</span></a>
+                        </li>
+                        <li>
+                            <a href="/html/assets/notas/index.html"><i> </i> <span class="radio-icon">Listar Notas</span></a>
+                        </li>
+                        <li>
+                            <a href="/html/assets/pagamentos/index.html"><i> </i> <span class="radio-icon">Listar Pagamentos</span></a>
+                        </li>
+                         <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Listar Serviços Academico</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Pagina do Estudante</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="alerta" onclick="alerta()"><i> </i> <span class="radio-icon">Solicitar Documentos</span></a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="log-out">
+                <a href="#"><span><i class="fa-solid fa-power-off" style="color: #e90729;"></i>SAIR</span></a>
+            </div>
+        </aside>
+
+        <section class="content">
+            <header>
+                <h2>Visualizar Pagamentos</h2>
+            </header>
+
+            <div class="container-pagamentos">
+                
+                <div class="ano-letivo" id="ano-letivo">
+                    <label for="anolectivo">Ano lectivo:</label>
+                    <select id="anoletivo">
+                            <option value="2022/2023">2022/2023</option>
+
+                            <option value="2009">2009</option>
+
+                            <option value="2010">2010</option>
+
+                            <option value="2011">2011</option>
+
+                            <option value="2012">2012</option>
+
+                            <option value="2013">2013</option>
+
+                            <option value="2014">2014</option>
+
+                            <option value="2015">2015</option>
+
+                            <option value="2016">2016</option>
+
+                            <option value="2017">2017</option>
+
+                            <option value="2018">2018</option>
+
+                            <option value="2019">2019</option>
+
+                            <option value="2020/2021">2020/2021</option>
+
+                            <option value="2021/2022">2021/2022</option>
+
+                            <option value="2022/2023">2022/2023</option>
+                    </select>
+                </div>
+                
+                <div class="table-container-pg">
+                    <ul>
+                        <li>
+                            <a href="index.html">Serviços Pagos</a>
+                        </li>
+                        <li>
+                            <a href="#">Dívidas</a>
+                        </li>
+                    </ul>
+                   
+                    <div class="painel-extra" id="painel-extra-pg">
+                        <div class="mostar">
+                         <label>Mostrar </label>
+                         <select aria-controls="table">
+                             <option></option>
+                                 <option>10</option>
+                                 <option>25</option>
+                                 <option>50</option>
+                                 <option>100</option>
+                             </select>
+                             <label> Registos</label>
+                        </div>
+                        <div class="search">
+                             <label for="isearch">Pesquisar:</label><input type="search" name="search" id="isearch">
+                        </div>
+                     </div>
+
+                    <div class="table-content" id="table-scrooll">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Serviços</th>
+
+                                    <th>Descrição</th>
+
+                                    <th>Referencia</th>
+
+                                    <th>Data de Pagamentos</th>
+
+                                    <th>Data de Lancamento</th>
+
+                                    <th>Modo de Pagamento</th>
+
+                                    <th>Bordero</th>
+
+                                    <th>Moeda</th>
+
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CONFIRMACAO DE MATRICULA</td>
+                                    <td>CONFIRMACAO DE MATRICULA</td>
+                                    <td></td>
+                                    <td>2022-10-07</td>
+                                    <td>2022-10-07</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+                                
+
+                                <tr>
+                                    <td>PROPINA</td>
+                                    <td>Novembro</td>
+                                    <td></td>
+                                    <td>2022-11-29</td>
+                                    <td>2022-11-29</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>PROPINA</td>
+                                    <td>Dezembro</td>
+                                    <td></td>
+                                    <td>2022-12-09</td>
+                                    <td>2022-12-09</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>PROPINA</td>
+                                    <td>Janeiro</td>
+                                    <td></td>
+                                    <td>2023-01-27</td>
+                                    <td>2023-01-27</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>PROPINA</td>
+                                    <td>Fevereiro</td>
+                                    <td></td>
+                                    <td>2023-02-10</td>
+                                    <td>2023-02-10</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>PROPINA</td>
+                                    <td>Março</td>
+                                    <td></td>
+                                    <td>2023-03-05</td>
+                                    <td>2023-03-05</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>PROPINA</td>
+                                    <td>Abril</td>
+                                    <td></td>
+                                    <td>2023-04-12</td>
+                                    <td>2023-04-12</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>PROPINA</td>
+                                    <td>Maio</td>
+                                    <td></td>
+                                    <td>2023-05-15</td>
+                                    <td>2023-05-15</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>PROPINA</td>
+                                    <td>Junho</td>
+                                    <td></td>
+                                    <td>2023-06-25</td>
+                                    <td>2023-06-25</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>AMORTIZAÇÃO</td>
+                                    <td>Julho</td>
+                                    <td></td>
+                                    <td>2023-07-30</td>
+                                    <td>2023-07-30</td>
+                                    <td>TPA_MULTICAIXA</td>
+                                    <td>485045611</td>
+                                    <td>AKZ</td>
+                                    <td>47600</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="painel-filtro">
+                    <div class="info-content">Listando 1 to 9 of 9 entradas</div>
+                    <div class="button-item">
+                        <a href="#" class="button-previeus">Anterior</a>
+
+                        <a href="#">1</a>
+
+                        <a href="#" class="button-next">Próximo</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p><strong>Copyright &copy; 2017 - WebSchool Powered By</strong> <a href="#">AdminLTE</a>.Direitos Reservados</p>
+    </footer>
+
+
+
+    <script src="/html/script/script.js"></script>
+</body>
+</html>
